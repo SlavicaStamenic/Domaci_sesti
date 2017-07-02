@@ -1,0 +1,179 @@
+/*1 general*/
+*{
+	box-sizing: border-box;
+	font-family:'Slabo 27px', serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Zilla Slab', serif;
+}
+img{
+	max-width: 100%;
+	height:auto;
+}
+p{
+	color:#888;
+}
+a{
+	color:#e74c3c;
+	text-decoration: none;
+}
+a:hover {
+opacity: 0.8;
+text-decoration: underline;
+}
+.container{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.clearfix{
+	clear:both;
+}
+header{
+	background-color: #242424;
+	color: white;
+	padding: 20px 0 0;
+	text-align: center;
+}
+nav ul{
+	list-style: none;
+	padding: 30px 0;
+	background-color: red;
+}
+nav ul li{
+	display: inline;
+}
+nav ul li: nth-child (2){
+	margin: 0 15px;
+}
+nav ul li a{
+	color: whitesmoke;
+}
+.logo{
+	margin-bottom: 0;
+	font-size: 20px;
+}
+.titula{
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-size: 16px;
+}
+.selected{
+	text-decoration: underline;
+}
+.main-content{
+	padding: 50px 10px;
+}
+.projekat{
+	width: 100%;
+	max-width: 600px;
+	margin:70px;
+	margin:70px auto;
+	background-color: #efefef;
+	border: 1px solid rgba(0, 0, 0, 0.3)
+	border-radius:5px;
+	overflow: hidden;
+}
+.projekat img{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3)
+}
+.projekat section{
+	padding: 30px;
+}
+.projekat section h1{
+	font-size: 18px;
+	margin:0;
+	text-transform: uppercase;
+}
+.projekat section p{
+	font-size: 14px;
+	color: gray;
+}
+
+
+.o-nama{
+	display: block;
+	max-width: 150px;
+	margin: 0 auto 50px;
+    border-radius: 50%;
+}
+
+
+.kontakt-info{
+	margin-bottom: 70px;
+}
+.kontakt-detalji ul{
+	list-style: none;
+	padding: 0;
+}
+.kontakt-detalji ul li{
+	margin-bottom: 10px;
+}
+.kontakt-detalji ul li span{
+	margin-right: 10px;
+}
+
+
+footer{
+	text-align: center;
+}
+footer span{
+	font-size: 20px;
+	color: black;
+}
+.facebook{
+	margin-right: 5px;
+}
+.instagram{
+	margin-left: 5px;
+}
+
+@media screen and (min-width: 910px){
+	header{
+		text-align: initial;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-bottom: 3px solid red;
+	}
+	header h1, header h2{
+		display:inline-block;
+	}
+	nav{
+		float: right;
+	}
+	nav ul{
+		background-color: transparent;
+		margin-top: 0;
+		padding-top: 14px;
+	}
+	.logo{
+		margin-top: 12px;
+	}
+	.projekat{
+		width: 32%;
+		display: inline-block;
+	}
+	.projekat: nth-child(3n+2){
+		margin-left: 1.6%;
+		margin-right: 1.6%;
+	}
+	.projekat section h1{
+		font-size: 25px;
+	}
+	.o-nama{
+		margin: 0.5% 80px 0;
+		float: left;
+	}
+	.kontakt-info{
+		width: 69%;
+	}
+	.kontakt-detalji{
+		width:30%;
+		padding-left: 10%;
+		vertical-align: top;
+	}
+	.kontakt-info, 
+	.kontakt-detalji{
+		display: inline-block;
+		padding-left: 5%;
+	}
+}
